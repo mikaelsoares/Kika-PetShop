@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-image: radial-gradient(circle, #ffc700, #f1ac00, #e19300, #cf7a00, #bc6200);
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    font-family: rubik;
+    padding-left: 50px;
+    padding-top: 20px;
+    gap: 20px;
+    color: white;
+}
+
+header .logo {
+    padding-right: 40px;
+    width: 40px;   
+    height: 40px;
+    align-self: center;
+    padding-left: 3px;
+    transform: scaleX(-1);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+
+main .title-imagem {
+    margin-top:0px;
+
+}
+
+main .left-content {
+    padding: 50px;    
+}
+
+main .left-content .title {
+    font-family: Merriweather, serif;
+    color: white;
+    font-weight: 900 bold;
+    font-size: 64px;
+    max-width: 600px;
+    margin-bottom: 0px;
+}
+
+main .slogan {
+    font-family: rubik;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+main .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    font-family: rubik;
+    color: #ffffff;
+    background-color: rgb(221, 155, 32);
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 16px;    
+    cursor: pointer;
+}
+
+main .btn:hover {
+    background-color: #ffb950;
+}
+
+main .btn-whatsapp {
+    text-decoration: none;
+}
+
+aside .image {
+    width: 500px;
+    padding: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        justify-content: center;
+        padding: 0;
+        padding-top: 15px;
+
+    }
+    
+    main .left-content .title {
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    main .btn {
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main .left-content {
+        padding-bottom: 0px;
+    }
+
+    aside .image {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+    }
+}
