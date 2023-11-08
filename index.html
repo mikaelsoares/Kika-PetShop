@@ -31,7 +31,41 @@
         </section>
         <aside>
             <img class="image" src="./Imagens/cao.png">            
-        </aside>     
+        </aside>   
+
+        <button id="scrollButton" aria-label="Rolar para Baixo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+        </button>
+        
     </main>   
+    <div id="content">
+        <div class="form-container">
+            <h1>Agendamento de Serviço</h1>
+            <form action="submit_form.php" method="post">
+              <label for="owner">Nome do Dono:</label>
+              <input type="text" id="owner" name="owner" required /><br /><br />
+      
+              <label for="pet">Nome do Pet:</label>
+              <input type="text" id="pet" name="pet" required /><br /><br />
+      
+              <label for="service">Tipo de Serviço:</label>
+              <select id="service" name="service" required>
+                <option value="banho">Banho</option>
+                <option value="tosa">Tosa</option>
+                <option value="consulta">Consulta Veterinária</option>
+                <!-- Adicione mais opções conforme necessário --></select
+              ><br /><br />
+      
+              <label for="date">Data do Agendamento:</label>
+              <input type="date" id="date" name="date" required /><br /><br />
+      
+              <label for="time">Horário:</label>
+              <input type="time" id="time" name="time" required /><br /><br />
+      
+              <input type="submit" value="Agendar" />
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
