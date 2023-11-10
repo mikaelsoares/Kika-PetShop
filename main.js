@@ -1,6 +1,7 @@
 const botao = document.querySelector("#scrollButton");
 
 botao.addEventListener("click", () => {
-  window.scroll({ top: window.innerHeight, behavior: "smooth" });
-  botao.style.display = "none";
+  const alturaTotalPagina = document.body.scrollHeight;
+  window.scroll({ top: alturaTotalPagina, behavior: "smooth" });
+  // botao.style.display = "none";
 });

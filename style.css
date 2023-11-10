@@ -41,6 +41,36 @@ main {
   justify-content: space-around;
   color: white;
   flex-wrap: wrap;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: white;
 }
 
 main .title-imagem {
@@ -131,7 +161,7 @@ aside .image {
 #scrollButton {
   position: fixed;
   bottom: 20px;
-  /* right: 20px; */
+  right: 50%;
   padding: 10px;
   cursor: pointer;
   background-color: transparent;
@@ -205,4 +235,67 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: #f5f5f5;
+}
+.section {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.title {
+  color: #333;
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.text-content {
+  width: 48%;
+}
+.image-content {
+  width: 40%;
+  margin-left: auto;
+  /* Placeholder for actual images */
+  /* background-color: #ddd; */
+  /* height: 200px; */
+  /* border-radius: 10px; */
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: #ffffff;
+  text-align: center;
+  height: 100px;
+}
+
+footer {
+  color: white;
+}
+
+.rights {
+  text-align: center;
 }
