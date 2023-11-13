@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap");
+
+html {
+  margin-top: 50px;
+  margin-left: 320px;
+  padding: 0px;
+  border: 0px;
+  background-image: radial-gradient(
+    circle,
+    #ffc700,
+    #f1ac00,
+    #e19300,
+    #cf7a00,
+    #bc6200
+  );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 100vh;
+  width: 80%;
+}
+
+h3 {
+  text-align: center;
+}
+
